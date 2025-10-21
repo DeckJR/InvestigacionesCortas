@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Investigación 3 — Accesibilidad Web</title>
+    <meta name="description" content="Accesibilidad web" />
+    <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+        <div class="container">
+        <h1>Investigación 3: Accesibilidad Web</h1>
+        <nav aria-label="Menú">
+            <ul class="main-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="seo.html">SEO y rendimiento</a></li>
+            <li><a href="usabilidad.html">Usabilidad Web y DCU</a></li>
+            <li><a href="accesibilidad.html" aria-current="page">Accesibilidad Web</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container" tabindex="-1">
+        <article aria-labelledby="a-que-es">
+        <h2 id="a-que-es">¿Qué es la Accesibilidad Web?</h2>
+        <p>La accesibilidad web se refiere a la práctica de diseñar y desarrollar sitios que puedan ser usados por todo tipo de personas, aunque estas tengan alguna discapacidad (física, sensorial, cognitiva o tecnológica), para que estos puedan percibir y comprender nuestro sitio.</p>
+
+        <h3>Importancia</h3>
+        <p>La accesibilidad web es de vital importancia ya que todas las personas somos iguales sin importar las discapacidades que hayan de por medio, todos valemos lo mismo y por ende tenemos los mismos derechos, siendo el resultado de esta misma equivalencia entre todos que podamos acceder a la misma información, a los mismos sitios y mismas oportunidades, ya que no se le puede privar a alguien del conocimiento. Además, nos ayuda a mejorar la calidad de nuestro código al garantizar que pueda ser usado por todo tipo de personas.</p>
+
+        <h3>Principios WCAG (Perceptible, Operable, Comprensible, Robusto)</h3>
+        <h4>Perceptible</h4>
+        <p>Toda la información y contenidos presentes en nuestro sitio deben de ser perceptibles para todo tipo de usuarios. Por ejemplo:</p>
+        <pre><code>&lt;img src="images/accesibility-example.webp" alt="Diagrama: colores de alto contraste"&gt;</code></pre>
+
+        <h4>Operable</h4>
+        <p>Todos los usuarios podrán usar los componentes de la interfaz gráfica. Por ejemplo:</p>
+        <p>Que todos los controles sean alcanzables con Tab y activables con Enter/Space. Ejemplo: botones &lt;button&gt; nativos y enlaces &lt;a&gt; con href.</p>
+
+        <h4>Comprensible</h4>
+        <p>Toda la información y contenidos tienen que ser de fácil entendimiento para todos los usuarios sin importar su capacidad cognitiva. Por ejemplo:</p>
+        <p>Textos claros, lenguaje simple, instrucciones para formularios con mensajes de error explicativos.</p>
+
+        <h4>Robusto</h4>
+        <p>El sitio debe de estar preparado para ser usado en diferentes dispositivos.</p>
+        <p>Ajustabilidad al ancho y largo del dispositivo o de la plataforma</p>
+        <h3>Ejemplo práctico implementado en el sitio</h3>
+        <ul>
+            <li>Skip link visible para usuarios de teclado.</li>
+            <li>Uso de etiquetas semánticas (&lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;footer&gt;).</li>
+            <li>Atributos ARIA mínimos donde corresponda (roles y aria-labels).</li>
+        </ul>
+
+        <h3>Referencias</h3>
+        <ol>
+                <li>
+                <a href="https://userway.org/es/blog/accesibilidad-web/" target="_blank" rel="noopener noreferrer">
+                Vizel, M. (2025, 5 mayo). Accesibilidad web ✅ El camino hacia la inclusión digital. Accesibilidad web es UserWay.
+                </a>
+            </li>
+            <li>
+                <a href="https://www.interaction-design.org/literature/topics/user-centered-design"target="_blank" rel="noopener noreferrer">
+                    Mora, S. L. (s. f.). Accesibilidad Web: Principios y pautas de WCAG 2.1. 
+                </a>
+            </li>
+            <li>
+                <a href="https://codemantra.com/importance-of-web-accessibility/" target="_blank" rel="noopener noreferrer">
+                Ravindran, S., & Ravindran, S. (2023, 18 abril). Importance of Web accessibility. Codemantra. 
+                </a>
+            </li>
+        </ol>
+        </article>
+    </main>
+
+    <footer class="site-footer container">
+        <p>Autor: Dereck Alonso Jiménez Rodríguez — ISW-512</p>
+    </footer>
+    </body>
+</html
